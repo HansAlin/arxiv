@@ -25,6 +25,14 @@ class ArxivSearch():
 		self.search_result_file_json = os.path.join(self.state_path, 'arxiv_results.json')
 		self.search_result_file_pkl = os.path.join(self.state_path, "arxiv_results.pkl")
 
+		# Get previously results
+		try:
+			self.results = self.load_results()
+		
+		exeption:
+			self.results = None
+
+
 		# Get state of last search
 		self.state_file_path = os.path.join(self.state_path,search_state_file)
 		self.state = {}
@@ -142,7 +150,7 @@ class ArxivSearch():
 					"pdf": result.pdf_url
 				})
 		
-		self._save_results(filtered_results=filtered_results)
+		self._save_results(results=filtered_results)
 		
 		self.start_date = self.end_date
 		self._save_state()
