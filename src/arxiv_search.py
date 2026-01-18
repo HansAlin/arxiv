@@ -47,16 +47,15 @@ class ArxivSearch():
 
 		# Search attributes
 		self.search_obj = None
-		self.query = None
+		self.query = self.set_query()
 
 	def set_query(self) -> str:
-		"""	Construct a broad, inclusive arXiv query suitable for:
+		"""
+		Construct a broad, inclusive arXiv query suitable for:
 		- LDMX and similar fixed-target experiments
 		- Detector and calorimeter studies
 		- Cosmic-ray / cosmic-muon calibration
 		- Light dark matter searches (but not exclusively)
-		Returns:
-			query: The query
 		"""
 
 		# Categories: experimental and high-energy relevant
@@ -114,7 +113,11 @@ class ArxivSearch():
 		# Final query
 		self.query = f"{categories} AND {keywords}"
 
+		print(self.query)
+
 		return self.query
+
+
 
 
 	def run_search(self, max_results=100, query=None):
@@ -127,6 +130,9 @@ class ArxivSearch():
 		Returns:
 			json: The results from arxive
 		"""
+
+		if query is None:
+			query = self.query
 
 		
 		self.search = arxiv.Search(
