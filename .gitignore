@@ -1,0 +1,13 @@
+# Ignore state folder
+
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore logs
+*.log
+
+# Ignore virtual environment
+env/
+.vscode/
