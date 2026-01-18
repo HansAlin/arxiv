@@ -19,7 +19,315 @@
 	</head>
 	<body>
 	<h1>arXiv Digest</h1>
-	<div class="meta">Generated: 2026-01-18 16:05 </div>
+	<div class="meta">Generated: 2026-01-18 16:41 </div>
+	
+
+	<div class="paper">
+	<div class="title"><a href="https://arxiv.org/pdf/2601.10116v1" target="_blank">CoCoPlan: Adaptive Coordination and Communication for Multi-robot Systems in Dynamic and Unknown Environments</a></div>
+	<div class="authors">Xintong Zhang, Junfeng Chen, Yuxiao Zhu, Bing Luo, Meng Guo</div>
+	<div class="pubdate">Published: 2026-01-15T06:50:21+00:00</div>
+	<details>
+		<summary>Abstract</summary>
+		<div class="abstract">Multi-robot systems can greatly enhance efficiency through coordination and collaboration, yet in practice, full-time communication is rarely available and interactions are constrained to close-range exchanges. Existing methods either maintain all-time connectivity, rely on fixed schedules, or adopt pairwise protocols, but none adapt effectively to dynamic spatio-temporal task distributions under limited communication, resulting in suboptimal coordination. To address this gap, we propose CoCoPlan, a unified framework that co-optimizes collaborative task planning and team-wise intermittent communication. Our approach integrates a branch-and-bound architecture that jointly encodes task assignments and communication events, an adaptive objective function that balances task efficiency against communication latency, and a communication event optimization module that strategically determines when, where and how the global connectivity should be re-established. Extensive experiments demonstrate that it outperforms state-of-the-art methods by achieving a 22.4% higher task completion rate, reducing communication overhead by 58.6%, and improving the scalability by supporting up to 100 robots in dynamic environments. Hardware experiments include the complex 2D office environment and large-scale 3D disaster-response scenario.</div>
+	</details>
+	</div>
+	
+
+	<div class="paper">
+	<div class="title"><a href="https://arxiv.org/pdf/2601.09849v1" target="_blank">Strategies of cooperation and defection in five large language models</a></div>
+	<div class="authors">Saptarshi Pal, Abhishek Mallela, Christian Hilbe, Lenz Pracher, Chiyu Wei et al.</div>
+	<div class="pubdate">Published: 2026-01-14T20:13:23+00:00</div>
+	<details>
+		<summary>Abstract</summary>
+		<div class="abstract">Large language models (LLMs) are increasingly deployed to support human decision-making. This use of LLMs has concerning implications, especially when their prescriptions affect the welfare of others. To gauge how LLMs make social decisions, we explore whether five leading models produce sensible strategies in the repeated prisoner's dilemma, which is the main metaphor of reciprocal cooperation. First, we measure the propensity of LLMs to cooperate in a neutral setting, without using language reminiscent of how this game is usually presented. We record to what extent LLMs implement Nash equilibria or other well-known strategy classes. Thereafter, we explore how LLMs adapt their strategies to changes in parameter values. We vary the game's continuation probability, the payoff values, and whether the total number of rounds is commonly known. We also study the effect of different framings. In each case, we test whether the adaptations of the LLMs are in line with basic intuition, theoretical predictions of evolutionary game theory, and experimental evidence from human participants. While all LLMs perform well in many of the tasks, none of them exhibit full consistency over all tasks. We also conduct tournaments between the inferred LLM strategies and study direct interaction between LLMs in games over ten rounds with a known or unknown last round. Our experiments shed light on how current LLMs instantiate reciprocal cooperation.</div>
+	</details>
+	</div>
+	
+
+	<div class="paper">
+	<div class="title"><a href="https://arxiv.org/pdf/2601.09836v1" target="_blank">A Risk-Stratified Benchmark Dataset for Bad Randomness (SWC-120) Vulnerabilities in Ethereum Smart Contracts</a></div>
+	<div class="authors">Hadis Rezaei, Rahim Taheri, Francesco Palmieri</div>
+	<div class="pubdate">Published: 2026-01-14T19:49:56+00:00</div>
+	<details>
+		<summary>Abstract</summary>
+		<div class="abstract">Many Ethereum smart contracts rely on block attributes such as block.timestamp or blockhash to generate random numbers for applications like lotteries and games. However, these values are predictable and miner-manipulable, creating the Bad Randomness vulnerability (SWC-120) that has led to real-world exploits. Current detection tools identify only simple patterns and fail to verify whether protective modifiers actually guard vulnerable code. A major obstacle to improving these tools is the lack of large, accurately labeled datasets. This paper presents a benchmark dataset of 1,752 Ethereum smart contracts with validated Bad Randomness vulnerabilities. We developed a five-phase methodology comprising keyword filtering, pattern matching with 58 regular expressions, risk classification, function-level validation, and context analysis. The function-level validation revealed that 49% of contracts initially classified as protected were actually exploitable because modifiers were applied to different functions than those containing vulnerabilities. We classify contracts into four risk levels based on exploitability: HIGH_RISK (no protection), MEDIUM_RISK (miner-exploitable only), LOW_RISK (owner-exploitable only), and SAFE (using Chainlink VRF or commit-reveal). Our dataset is 51 times larger than RNVulDet and the first to provide function-level validation and risk stratification. Evaluation of Slither and Mythril revealed significant detection gaps, as both tools identified none of the vulnerable contracts in our sample, indicating limitations in handling complex randomness patterns. The dataset and validation scripts are publicly available to support future research in smart contract security.</div>
+	</details>
+	</div>
+	
+
+	<div class="paper">
+	<div class="title"><a href="https://arxiv.org/pdf/2601.09620v1" target="_blank">Full Disclosure, Less Trust? How the Level of Detail about AI Use in News Writing Affects Readers' Trust</a></div>
+	<div class="authors">Pooja Prajod, Hannes Cools, Thomas Röggla, Karthikeya Puttur Venkatraj, Amber Kusters et al.</div>
+	<div class="pubdate">Published: 2026-01-14T16:45:45+00:00</div>
+	<details>
+		<summary>Abstract</summary>
+		<div class="abstract">As artificial intelligence (AI) is increasingly integrated into news production, calls for transparency about the use of AI have gained considerable traction. Recent studies suggest that AI disclosures can lead to a ``transparency dilemma'', where disclosure reduces readers' trust. However, little is known about how the \textit{level of detail} in AI disclosures influences trust and contributes to this dilemma within the news context. In this 3$\times$2$\times$2 mixed factorial study with 40 participants, we investigate how three levels of AI disclosures (none, one-line, detailed) across two types of news (politics and lifestyle) and two levels of AI involvement (low and high) affect news readers' trust. We measured trust using the News Media Trust questionnaire, along with two decision behaviors: source-checking and subscription decisions. Questionnaire responses and subscription rates showed a decline in trust only for detailed AI disclosures, whereas source-checking behavior increased for both one-line and detailed disclosures, with the effect being more pronounced for detailed disclosures. Insights from semi-structured interviews suggest that source-checking behavior was primarily driven by interest in the topic, followed by trust, whereas trust was the main factor influencing subscription decisions. Around two-thirds of participants expressed a preference for detailed disclosures, while most participants who preferred one-line indicated a need for detail-on-demand disclosure formats. Our findings show that not all AI disclosures lead to a transparency dilemma, but instead reflect a trade-off between readers' desire for more transparency and their trust in AI-assisted news content.</div>
+	</details>
+	</div>
+	
+
+	<div class="paper">
+	<div class="title"><a href="https://arxiv.org/pdf/2601.09538v1" target="_blank">Quiet Sun impulsive events observed with NuSTAR during solar minimum</a></div>
+	<div class="authors">Sarah Paterson, Iain G. Hannah, Brian W. Grefenstette, Säm Krucker, Erica Lastufka et al.</div>
+	<div class="pubdate">Published: 2026-01-14T14:59:34+00:00</div>
+	<details>
+		<summary>Abstract</summary>
+		<div class="abstract">The investigation of small-scale energy release in the Sun's atmosphere is important in understanding how the corona is heated. Previous work has been able to study small EUV and SXR brightenings outside of active regions (i.e. the quiet Sun), but with HXRs this has mostly focused on active region transients/microflares due to the sensitivity of available telescopes. In this paper we present observations of the quiet Sun with the Nuclear Spectroscopic Telescope Array (NuSTAR), an X-ray imaging spectrometer with much greater sensitivity than previous instruments, allowing the observation of faint events. During the recent solar minimum, NuSTAR captured seven quiet Sun flares/impulsive brightenings, three on 21 February 2020, and four on 12-13 September 2020. From fitting their NuSTAR HXR spectra we find temperatures of 3.1-4.0 MK and emission measures between (0.75-17.0) $\times 10^{43}$ cm$^{-3}$, which gives thermal energies between (2.5-8.9) $\times 10^{26}$ erg. Only one event, a mini-filament eruption, showed evidence of slightly higher temperatures emission, confirmed through Differential Emission Measure analysis. None of the events showed evidence of non-thermal emission in their NuSTAR spectra, and we placed upper limits to the accelerated electron population. The thermal parameters for these quiet Sun events seem to scale differently to previously studied active region flares, suggesting a different energy release process might be dominating. However, this conclusion is affected by the different sensitivity and biases introduced by the various instruments and analysis approaches used.</div>
+	</details>
+	</div>
+	
+
+	<div class="paper">
+	<div class="title"><a href="https://arxiv.org/pdf/2601.09760v1" target="_blank">Investigating Tool-Memory Conflicts in Tool-Augmented LLMs</a></div>
+	<div class="authors">Jiali Cheng, Rui Pan, Hadi Amiri</div>
+	<div class="pubdate">Published: 2026-01-14T03:44:36+00:00</div>
+	<details>
+		<summary>Abstract</summary>
+		<div class="abstract">Tool-augmented large language models (LLMs) have powered many applications. However, they are likely to suffer from knowledge conflict. In this paper, we propose a new type of knowledge conflict -- Tool-Memory Conflict (TMC), where the internal parametric knowledge contradicts with the external tool knowledge for tool-augmented LLMs. We find that existing LLMs, though powerful, suffer from TMC, especially on STEM-related tasks. We also uncover that under different conditions, tool knowledge and parametric knowledge may be prioritized differently. We then evaluate existing conflict resolving techniques, including prompting-based and RAG-based methods. Results show that none of these approaches can effectively resolve tool-memory conflicts.</div>
+	</details>
+	</div>
+	
+
+	<div class="paper">
+	<div class="title"><a href="https://arxiv.org/pdf/2601.09071v1" target="_blank">Resolving Predictive Multiplicity for the Rashomon Set</a></div>
+	<div class="authors">Parian Haghighat, Hadis Anahideh, Cynthia Rudin</div>
+	<div class="pubdate">Published: 2026-01-14T02:02:54+00:00</div>
+	<details>
+		<summary>Abstract</summary>
+		<div class="abstract">The existence of multiple, equally accurate models for a given predictive task leads to predictive multiplicity, where a ``Rashomon set'' of models achieve similar accuracy but diverges in their individual predictions. This inconsistency undermines trust in high-stakes applications where we want consistent predictions. We propose three approaches to reduce inconsistency among predictions for the members of the Rashomon set. The first approach is \textbf{outlier correction}. An outlier has a label that none of the good models are capable of predicting correctly. Outliers can cause the Rashomon set to have high variance predictions in a local area, so fixing them can lower variance. Our second approach is local patching. In a local region around a test point, models may disagree with each other because some of them are biased. We can detect and fix such biases using a validation set, which also reduces multiplicity. Our third approach is pairwise reconciliation, where we find pairs of models that disagree on a region around the test point. We modify predictions that disagree, making them less biased. These three approaches can be used together or separately, and they each have distinct advantages. The reconciled predictions can then be distilled into a single interpretable model for real-world deployment. In experiments across multiple datasets, our methods reduce disagreement metrics while maintaining competitive accuracy.</div>
+	</details>
+	</div>
+	
+
+	<div class="paper">
+	<div class="title"><a href="https://arxiv.org/pdf/2601.09055v1" target="_blank">Multi parameter discrimination using multiple spectral troughs in a cascaded fiber sensor</a></div>
+	<div class="authors">Riming Xu, Yanbo Li, Xingnan Chen, Jin Wang</div>
+	<div class="pubdate">Published: 2026-01-14T00:49:19+00:00</div>
+	<details>
+		<summary>Abstract</summary>
+		<div class="abstract">Accurate monitoring of temperature, axial strain, and refractive index is critical for structural health monitoring, industrial process control, and environmental sensing. However, conventional optical fiber sensors are often limited by strong parameter cross sensitivity, poor discrimination capability, and increased system complexity when multiple sensing units are required. In this work, a compact multi-parameter optical fiber sensing platform is proposed based on a cascaded single-mode fiber, multimode fiber, and long-period fiber grating structure, combined with a wavelength-based spectral demodulation strategy. Within the cascaded configuration, multiple characteristic spectral troughs arising from distinct physical mechanisms coexist in a single transmission spectrum. Interference-induced troughs are generated by the multimode fiber section, while a resonance-induced trough is introduced by the long-period fiber grating. Although none of these troughs responds exclusively to a single parameter, each exhibits simultaneous and linearly independent responses to temperature, axial strain, and refractive index with distinct sensitivity magnitudes and trends. Consequently, each trough can be described by a unique sensitivity vector, enabling robust multi-parameter discrimination through multi-wavelength spectral demodulation.</div>
+	</details>
+	</div>
+	
+
+	<div class="paper">
+	<div class="title"><a href="https://arxiv.org/pdf/2601.08815v1" target="_blank">Agent Contracts: A Formal Framework for Resource-Bounded Autonomous AI Systems</a></div>
+	<div class="authors">Qing Ye, Jing Tan</div>
+	<div class="pubdate">Published: 2026-01-13T18:51:07+00:00</div>
+	<details>
+		<summary>Abstract</summary>
+		<div class="abstract">The Contract Net Protocol (1980) introduced coordination through contracts in multi-agent systems. Modern agent protocols standardize connectivity and interoperability; yet, none provide formal, resource governance-normative mechanisms to bound how much agents may consume or how long they may operate. We introduce Agent Contracts, a formal framework that extends the contract metaphor from task allocation to resource-bounded execution. An Agent Contract unifies input/output specifications, multi-dimensional resource constraints, temporal boundaries, and success criteria into a coherent governance mechanism with explicit lifecycle semantics. For multi-agent coordination, we establish conservation laws ensuring delegated budgets respect parent constraints, enabling hierarchical coordination through contract delegation. Empirical validation across four experiments demonstrates 90% token reduction with 525x lower variance in iterative workflows, zero conservation violations in multi-agent delegation, and measurable quality-resource tradeoffs through contract modes. Agent Contracts provide formal foundations for predictable, auditable, and resource-bounded autonomous AI deployment.</div>
+	</details>
+	</div>
+	
+
+	<div class="paper">
+	<div class="title"><a href="https://arxiv.org/pdf/2601.07992v1" target="_blank">Fake Date Tests: Can We Trust In-sample Accuracy of LLMs in Macroeconomic Forecasting?</a></div>
+	<div class="authors">Alexander Eliseev, Sergei Seleznev</div>
+	<div class="pubdate">Published: 2026-01-12T20:44:34+00:00</div>
+	<details>
+		<summary>Abstract</summary>
+		<div class="abstract">Large language models (LLMs) are a type of machine learning tool that economists have started to apply in their empirical research. One such application is macroeconomic forecasting with backtesting of LLMs, even though they are trained on the same data that is used to estimate their forecasting performance. Can these in-sample accuracy results be extrapolated to the model's out-of-sample performance? To answer this question, we developed a family of prompt sensitivity tests and two members of this family, which we call the fake date tests. These tests aim to detect two types of biases in LLMs' in-sample forecasts: lookahead bias and context bias. According to the empirical results, none of the modern LLMs tested in this study passed our first test, signaling the presence of lookahead bias in their in-sample forecasts.</div>
+	</details>
+	</div>
+	
+
+	<div class="paper">
+	<div class="title"><a href="https://arxiv.org/pdf/2601.07710v1" target="_blank">From perovskite to infinite-layer nickelates: hole concentration from x-ray absorption</a></div>
+	<div class="authors">R. Pons, M. Flavenot, K. Fürsich, E. Schierle, E. Weschke et al.</div>
+	<div class="pubdate">Published: 2026-01-12T16:43:43+00:00</div>
+	<details>
+		<summary>Abstract</summary>
+		<div class="abstract">The difficulty of determining cation concentrations and oxygen stoichiometry in infinite-layer nickelate thin films has so far prevented clear experimental identification of the nickel electron configuration in the superconducting phase. We used soft x-ray absorption spectroscopy to study the successive changes in PrNiO$_x$ thin films at various intermediate stages of topotactic reduction with $x=2-3$. By comparing the Ni-$L$ edge spectra to single and double cluster ligand-field calculations, we find that none of our samples exhibit a pure $d^9$ configuration. Our quantitative analysis using the charge sum rule shows that even when films are maximally reduced, the averaged number of nickel $3d$ holes is 1.35. Superconducting samples have even higher values, calling into question the previously assumed limit of hole doping. Concomitant changes in the oxygen $K$-edge absorption spectra upon reduction indicate the presence of oxygen $2p$ holes, even in the most reduced films. Overall, our results suggest a complex interplay of hole doping mechanisms resulting from self-doping effects and oxygen non-stoichiometry.</div>
+	</details>
+	</div>
+	
+
+	<div class="paper">
+	<div class="title"><a href="https://arxiv.org/pdf/2601.05921v1" target="_blank">Evaluating infectious disease forecasts in a cost-loss situation</a></div>
+	<div class="authors">Philip Gerlee, Torbjörn Lundh, Anna Saxne Jöud, Henrik Thorén</div>
+	<div class="pubdate">Published: 2026-01-09T16:34:24+00:00</div>
+	<details>
+		<summary>Abstract</summary>
+		<div class="abstract">In order for epidemiological forecasts to be useful for decision-makers the forecasts need to be properly validated and evaluated. Although several metrics fore evaluation have been proposed and used none of them account for the potential costs and losses that the decision-maker faces. We have adapted a decision-theoretic framework to an epidemiological context which assigns a Value Score (VS) to each model by comparing the expected expense of the decision-maker when acting on the model forecast to the expected expense obtained from acting on historical event probabilities. The VS depends on the cost-loss ratio and a positive VS implies added value for the decision-maker whereas a negative VS means that historical event probabilities outperform the model forecasts. We apply this framework to a subset of model forecasts of influenza peak intensity from the FluSight Challenge and show that most models exhibit a positive VS for some range of cost-loss ratios. However, there is no clear relationship between the VS and the original ranking of the model forecasts obtained using a modified log score. This is in part explained by the fact that the VS is sensitive to over- vs. under-prediction, which is not the case for standard evaluation metrics. We believe that this type of context-sensitive evaluation will lead to improved utilisation of epidemiological forecasts by decision-makers.</div>
+	</details>
+	</div>
+	
+
+	<div class="paper">
+	<div class="title"><a href="https://arxiv.org/pdf/2601.06221v1" target="_blank">LDTC: Lifelong deep temporal clustering for multivariate time series</a></div>
+	<div class="authors">Zhi Wang, Yanni Li, Pingping Zheng, Yiyuan Jiao</div>
+	<div class="pubdate">Published: 2026-01-09T07:05:31+00:00</div>
+	<details>
+		<summary>Abstract</summary>
+		<div class="abstract">Clustering temporal and dynamically changing multivariate time series from real-world fields, called temporal clustering for short, has been a major challenge due to inherent complexities. Although several deep temporal clustering algorithms have demonstrated a strong advantage over traditional methods in terms of model learning and clustering results, the accuracy of the few algorithms are not satisfactory. None of the existing algorithms can continuously learn new tasks and deal with the dynamic data effectively and efficiently in the sequential tasks learning. To bridge the gap and tackle these issues, this paper proposes a novel algorithm \textbf{L}ifelong \textbf{D}eep \textbf{T}emporal \textbf{C}lustering (\textbf{LDTC}), which effectively integrates dimensionality reduction and temporal clustering into an end-to-end deep unsupervised learning framework. Using a specifically designed autoencoder and jointly optimizing for both the latent representation and clustering objective, the LDTC can achieve high-quality clustering results. Moreover, unlike any previous work, the LDTC is uniquely equipped with the fully dynamic model expansion and rehearsal-based techniques to effectively learn new tasks and to tackle the dynamic data in the sequential tasks learning without the catastrophic forgetting or degradation of the model accuracy. Experiments on seven real-world multivariate time series datasets show that the LDTC is a promising method for dealing with temporal clustering issues effectively and efficiently.</div>
+	</details>
+	</div>
+	
+
+	<div class="paper">
+	<div class="title"><a href="https://arxiv.org/pdf/2601.05414v1" target="_blank">Large Language Models Are Bad Dice Players: LLMs Struggle to Generate Random Numbers from Statistical Distributions</a></div>
+	<div class="authors">Minda Zhao, Yilun Du, Mengyu Wang</div>
+	<div class="pubdate">Published: 2026-01-08T22:33:12+00:00</div>
+	<details>
+		<summary>Abstract</summary>
+		<div class="abstract">As large language models (LLMs) transition from chat interfaces to integral components of stochastic pipelines across domains like educational assessment and synthetic data construction, the ability to faithfully sample from specified probability distributions has become a functional requirement rather than a theoretical curiosity. We present the first large-scale, statistically powered audit of native probabilistic sampling in frontier LLMs, benchmarking 11 models across 15 distributions. To disentangle failure modes, we employ a dual-protocol design: Batch Generation, where a model produces N=1000 samples within one response, and Independent Requests, comprising $N=1000$ stateless calls. We observe a sharp protocol asymmetry: batch generation achieves only modest statistical validity, with a 13% median pass rate, while independent requests collapse almost entirely, with 10 of 11 models passing none of the distributions. Beyond this asymmetry, we reveal that sampling fidelity degrades monotonically with distributional complexity and aggravates as the requested sampling horizon N increases. Finally, we demonstrate the propagation of these failures into downstream tasks: models fail to enforce uniform answer-position constraints in MCQ generation and systematically violate demographic targets in attribute-constrained text-to-image prompt synthesis. These findings indicate that current LLMs lack a functional internal sampler, necessitating the use of external tools for applications requiring statistical guarantees.</div>
+	</details>
+	</div>
+	
+
+	<div class="paper">
+	<div class="title"><a href="https://arxiv.org/pdf/2601.05366v1" target="_blank">Lost in Execution: On the Multilingual Robustness of Tool Calling in Large Language Models</a></div>
+	<div class="authors">Zheng Luo, T Pranav Kutralingam, Ogochukwu N Okoani, Wanpeng Xu, Hua Wei et al.</div>
+	<div class="pubdate">Published: 2026-01-08T20:44:28+00:00</div>
+	<details>
+		<summary>Abstract</summary>
+		<div class="abstract">Large Language Models (LLMs) are increasingly deployed as agents that invoke external tools through structured function calls. While recent work reports strong tool-calling performance under standard English-centric evaluations, the robustness of tool calling under multilingual user interactions remains underexplored. In this work, we introduce MLCL, a diagnostic benchmark, and conduct a systematic evaluation of multilingual tool calling across Chinese, Hindi, and the low-resource language Igbo. Through fine-grained error analysis, we show that many failures occur despite correct intent understanding and tool selection. We identify parameter value language mismatch as a dominant failure mode, where models generate semantically appropriate parameter values in the user's language, violating language-invariant execution conventions. We further evaluate several inference-time system strategies and find that while these strategies substantially reduce language-induced execution errors, none of them can fully recover English-level performance.</div>
+	</details>
+	</div>
+	
+
+	<div class="paper">
+	<div class="title"><a href="https://arxiv.org/pdf/2601.04569v1" target="_blank">Industrial Data-Service-Knowledge Governance: Toward Integrated and Trusted Intelligence for Industry 5.0</a></div>
+	<div class="authors">Hailiang Zhao, Ziqi Wang, Daojiang Hu, Zhiwei Ling, Wenzhuo Qian et al.</div>
+	<div class="pubdate">Published: 2026-01-08T03:53:14+00:00</div>
+	<details>
+		<summary>Abstract</summary>
+		<div class="abstract">The convergence of artificial intelligence, cyber-physical systems, and cross-enterprise data ecosystems has propelled industrial intelligence to unprecedented scales. Yet, the absence of a unified trust foundation across data, services, and knowledge layers undermines reliability, accountability, and regulatory compliance in real-world deployments. While existing surveys address isolated aspects, such as data governance, service orchestration, and knowledge representation, none provides a holistic, cross-layer perspective on trustworthiness tailored to industrial settings. To bridge this gap, we present \textsc{Trisk} (TRusted Industrial Data-Service-Knowledge governance), a novel conceptual and taxonomic framework for trustworthy industrial intelligence. Grounded in a five-dimensional trust model (quality, security, privacy, fairness, and explainability), \textsc{Trisk} unifies 120+ representative studies along three orthogonal axes: governance scope (data, service, and knowledge), architectural paradigm (centralized, federated, or edge-embedded), and enabling technology (knowledge graphs, zero-trust policies, causal inference, etc.). We systematically analyze how trust propagates across digital layers, identify critical gaps in semantic interoperability, runtime policy enforcement, and operational/information technologies alignment, and evaluate the maturity of current industrial implementations. Finally, we articulate a forward-looking research agenda for Industry 5.0, advocating for an integrated governance fabric that embeds verifiable trust semantics into every layer of the industrial intelligence stack. This survey serves as both a foundational reference for researchers and a practical roadmap for engineers to deploy trustworthy AI in complex and multi-stakeholder environments.</div>
+	</details>
+	</div>
+	
+
+	<div class="paper">
+	<div class="title"><a href="https://arxiv.org/pdf/2601.04163v1" target="_blank">Scanner-Induced Domain Shifts Undermine the Robustness of Pathology Foundation Models</a></div>
+	<div class="authors">Erik Thiringer, Fredrik K. Gustafsson, Kajsa Ledesma Eriksson, Mattias Rantalainen</div>
+	<div class="pubdate">Published: 2026-01-07T18:24:12+00:00</div>
+	<details>
+		<summary>Abstract</summary>
+		<div class="abstract">Pathology foundation models (PFMs) have become central to computational pathology, aiming to offer general encoders for feature extraction from whole-slide images (WSIs). Despite strong benchmark performance, PFM robustness to real-world technical domain shifts, such as variability from whole-slide scanner devices, remains poorly understood. We systematically evaluated the robustness of 14 PFMs to scanner-induced variability, including state-of-the-art models, earlier self-supervised models, and a baseline trained on natural images. Using a multiscanner dataset of 384 breast cancer WSIs scanned on five devices, we isolated scanner effects independently from biological and laboratory confounders. Robustness is assessed via complementary unsupervised embedding analyses and a set of clinicopathological supervised prediction tasks. Our results demonstrate that current PFMs are not invariant to scanner-induced domain shifts. Most models encode pronounced scanner-specific variability in their embedding spaces. While AUC often remains stable, this masks a critical failure mode: scanner variability systematically alters the embedding space and impacts calibration of downstream model predictions, resulting in scanner-dependent bias that can impact reliability in clinical use cases. We further show that robustness is not a simple function of training data scale, model size, or model recency. None of the models provided reliable robustness against scanner-induced variability. While the models trained on the most diverse data, here represented by vision-language models, appear to have an advantage with respect to robustness, they underperformed on downstream supervised tasks. We conclude that development and evaluation of PFMs requires moving beyond accuracy-centric benchmarks toward explicit evaluation and optimisation of embedding stability and calibration under realistic acquisition variability.</div>
+	</details>
+	</div>
+	
+
+	<div class="paper">
+	<div class="title"><a href="https://arxiv.org/pdf/2601.06178v1" target="_blank">Performance of models for monitoring sustainable development goals from remote sensing: A three-level meta-regression</a></div>
+	<div class="authors">Jonas Klingwort, Nina M. Leach, Joep Burger</div>
+	<div class="pubdate">Published: 2026-01-07T15:16:26+00:00</div>
+	<details>
+		<summary>Abstract</summary>
+		<div class="abstract">Machine learning (ML) is a tool to exploit remote sensing data for the monitoring and implementation of the United Nations' Sustainable Development Goals (SDGs). In this paper, we report on a meta-analysis to evaluate the performance of ML applied to remote sensing data to monitor SDGs. Specifically, we aim to 1) estimate the average performance; 2) determine the degree of heterogeneity between and within studies; and 3) assess how study features influence model performance. Using PRISMA guidelines, a search was performed across multiple academic databases to identify potentially relevant studies. A random sample of 200 was screened by three reviewers, resulting in 86 trials within 20 studies with 14 study features. Overall accuracy was the most reported performance metric. It was analyzed using double arcsine transformation and a three-level random effects model. The average overall accuracy of the best model was 0.90 [0.86, 0.92]. There was considerable heterogeneity in model performance, 64% of which was between studies. The only significant feature was the prevalence of the majority class, which explained 61% of the between-study heterogeneity. None of the other thirteen features added value to the model. The most important contributions of this paper are the following two insights. 1) Overall accuracy is the most popular performance metric, yet arguably the least insightful. Its sensitivity to class imbalance makes it necessary to normalize it, which is far from common practice. 2) The field needs to standardize the reporting. Reporting of the confusion matrix for independent test sets is the most important ingredient for between-study comparisons of ML classifiers. These findings underscore the need for robust and comparable evaluation metrics in machine learning applications to ensure reliable and actionable insights for effective SDG monitoring and policy formulation.</div>
+	</details>
+	</div>
+	
+
+	<div class="paper">
+	<div class="title"><a href="https://arxiv.org/pdf/2601.03990v1" target="_blank">Investigation of the dynamics and origin of the NEA pair 2021 PH27 and 2025 GN1</a></div>
+	<div class="authors">Albino Carbognani, Marco Fenucci, Toni Santana-Ros, Clara E. Martínez-Vázquez, Marco Micheli</div>
+	<div class="pubdate">Published: 2026-01-07T15:01:47+00:00</div>
+	<details>
+		<summary>Abstract</summary>
+		<div class="abstract">We analyse the association between the NEAs 2021 PH27 and 2025 GN1, which share similar heliocentric Keplerian elements and the same taxonomic classification. First, we confirm the spectral similarity by getting independent colours measurements of 2025 GN1 and confirming that they are both X-type. From numerical integration of the orbits up to 100 kyr in the past, taking into account relativistic corrections, we found that the two asteroids experienced five similar flybys with Venus, but none of them were closer than the Roche limit. The perihelion distance also reached values between 0.1 and 0.08 au about 17/21 kyr and 45/48 kyr ago, but still well outside the Roche limit with the Sun. So, the origin of the pair by tidal disruption of a progenitor rubble-pile asteroid appears unlikely. On the other hand, we found periods lasting several thousand years where the perihelion was below 0.1 au, and this can lead to thermal fracturing of the surface. We found that the rotation period of the primary and the mass ratio secondary/primary make the pair indistinguishable from the binary systems known among the NEAs, and the YORP effect can double the rotation period of 2021 PH27 in $150 \pm 50$ kyr. So it is plausible that the pair was formed by the rotational disintegration of a rubble-pile asteroid due to anisotropic gas emission or the YORP effect, which formed a binary system that later dissolved due to the internal dynamics of the pair. We are unable to give a value for the separation age; we can only say that it occurred more than 10.5 kyr ago and may have occurred between 17/21 kyr ago during the last and longer phase of lower perihelion distance. In this scenario, little meteoroids released in space due to the fragmentation event are still near the pair's orbit and can generate a meteor shower in Venus' atmosphere.</div>
+	</details>
+	</div>
+	
+
+	<div class="paper">
+	<div class="title"><a href="https://arxiv.org/pdf/2601.03957v1" target="_blank">Online robust covariance matrix estimation and outlier detection</a></div>
+	<div class="authors">Paul Guillot, Antoine Godichon-Baggioni, Stéphane Robin, Laure Sansonnet</div>
+	<div class="pubdate">Published: 2026-01-07T14:11:14+00:00</div>
+	<details>
+		<summary>Abstract</summary>
+		<div class="abstract">Robust estimation of the covariance matrix and detection of outliers remain major challenges in statistical data analysis, particularly when the proportion of contaminated observations increases with the size of the dataset. Outliers can severely bias parameter estimates and induce a masking effect, whereby some outliers conceal the presence of other outliers, further complicating their detection. Although many approaches have been proposed for covariance estimation and outlier detection, to our knowledge, none of these methods have been implemented in an online setting. In this paper, we focus on online covariance matrix estimation and outlier detection. Specifically, we propose a new method for simultaneously and online estimating the geometric median and variance, which allows us to calculate the Mahalanobis distance for each incoming data point before deciding whether it should be considered an outlier. To mitigate the masking effect, robust estimation techniques for the mean and variance are required. Our approach uses the geometric median for robust estimation of the location and the median covariance matrix for robust estimation of the dispersion parameters. The new online methods proposed for parameter estimation and outlier detection allow real-time identification of outliers as data are observed sequentially. The performance of our methods is demonstrated on simulated datasets.</div>
+	</details>
+	</div>
+	
+
+	<div class="paper">
+	<div class="title"><a href="https://arxiv.org/pdf/2601.03372v1" target="_blank">Multiwavelength Modeling of the Luminous Fast Blue Optical Transient AT2024wpp</a></div>
+	<div class="authors">Conor M. B. Omand, Nikhil Sarin, Gavin P. Lamb, Daniel A. Perley, Andrew Mummery et al.</div>
+	<div class="pubdate">Published: 2026-01-06T19:19:38+00:00</div>
+	<details>
+		<summary>Abstract</summary>
+		<div class="abstract">Luminous fast blue optical transients (LFBOTs) are a growing class of enigmatic energetic transients. They show fast rises and declines, high temperatures throughout their evolution, and non-thermal emission in radio and X-rays. Their power source is currently unknown, but proposed models include engine-driven supernovae, interaction-powered supernovae, shock cooling emission, intermediate mass black hole tidal disruption events (IMBH TDEs), and Wolf-Rayet/black hole mergers, among others. AT2024wpp is the most optically luminous LFBOT to date and has been observed extensively at multiple wavelengths, including radio, optical, UV, and X-rays. We take models from multiple scenarios and fit them to the AT2024wpp optical, radio, and X-ray light curves to determine if which of these scenarios can best describe all aspects of the data. We show that none of the multiwavelength light curve models can reasonably explain the data, although other physical arguments favour a stellar mass/IMBH TDE of a low mass star and a synchrotron blast wave. We discuss how this scenario can be tested with late-time observations, and what other scenarios could possibly explain the broadband data.</div>
+	</details>
+	</div>
+	
+
+	<div class="paper">
+	<div class="title"><a href="https://arxiv.org/pdf/2601.04251v1" target="_blank">Using Grok to Avoid Personal Attacks While Correcting Misinformation on X</a></div>
+	<div class="authors">Kevin Matthe Caramancion</div>
+	<div class="pubdate">Published: 2026-01-06T18:17:58+00:00</div>
+	<details>
+		<summary>Abstract</summary>
+		<div class="abstract">Correcting misinformation in public online spaces often exposes users to hostility and ad hominem attacks, discouraging participation in corrective discourse. This study presents empirical evidence that invoking Grok, the native large language model on X, rather than directly confronting other users, is associated with different social responses during misinformation correction. Using an observational design, 100 correction replies across five high-conflict misinformation topics were analyzed, with corrections balanced between Grok-mediated and direct human-issued responses. The primary outcome was whether a correction received at least one ad hominem attack within a 24-hour window. Ad hominem attacks occurred in 72 percent of human-issued corrections and in none of the Grok-mediated corrections. A chi-square test confirmed a statistically significant association with a large effect size. These findings suggest that AI-mediated correction may alter the social dynamics of public disagreement by reducing interpersonal hostility during misinformation responses.</div>
+	</details>
+	</div>
+	
+
+	<div class="paper">
+	<div class="title"><a href="https://arxiv.org/pdf/2601.02787v1" target="_blank">Simple chemical systems with chaos</a></div>
+	<div class="authors">Tomislav Plesa, Julien Clinton Sprott</div>
+	<div class="pubdate">Published: 2026-01-06T07:47:26+00:00</div>
+	<details>
+		<summary>Abstract</summary>
+		<div class="abstract">A number of simple chaotic three-dimensional dynamical systems (DSs) with quadratic polynomials on the right-hand sides are reported in the literature, containing exactly 5 or 6 monomials of which only 1 or 2 are quadratic. However, none of these simple systems are chemical dynamical systems (CDSs) - a special subset of polynomial DSs that model the dynamics of mass-action chemical reaction networks (CRNs). In particular, only a small number of three-dimensional quadratic CDSs with chaos are reported, all of which have at least 9 monomials and at least 3 quadratics, with CRNs containing at least 7 reactions and at least 3 quadratic ones. To bridge this gap, in this paper we prove some basic properties of chaotic CDSs, including that those in three dimensions have at least 6 monomials, at least one of which is negative and quadratic. We then use these results to computationally find 20 chaotic three-dimensional CDSs with 6 monomials and as few as 4 quadratics, or 7 monomials and as few as 2 quadratics. At the CRN level, some of these systems have 4 reactions of which only 3 are quadratic, or 5 reactions with only 2 being quadratic. These results quantify structural complexity of chaotic CDSs, and indicate that they are ubiquitous.</div>
+	</details>
+	</div>
+	
+
+	<div class="paper">
+	<div class="title"><a href="https://arxiv.org/pdf/2601.02704v1" target="_blank">Analysis of Various Manipulator Configurations Based on Multi-Objective Black-Box Optimization</a></div>
+	<div class="authors">Kento Kawaharazuka, Keita Yoneda, Takahiro Hattori, Shintaro Inoue, Kei Okada</div>
+	<div class="pubdate">Published: 2026-01-06T04:29:40+00:00</div>
+	<details>
+		<summary>Abstract</summary>
+		<div class="abstract">Various 6-degree-of-freedom (DOF) and 7-DOF manipulators have been developed to date. Over a long history, their joint configurations and link length ratios have been determined empirically. In recent years, the development of robotic foundation models has become increasingly active, leading to the continuous proposal of various manipulators to support these models. However, none of these manipulators share exactly the same structure, as the order of joints and the ratio of link lengths differ among robots. Therefore, in order to discuss the optimal structure of a manipulator, we performed multi-objective optimization from the perspectives of end-effector reachability and joint torque. We analyze where existing manipulator structures stand within the sampling results of the optimization and provide insights for future manipulator design.</div>
+	</details>
+	</div>
+	
+
+	<div class="paper">
+	<div class="title"><a href="https://arxiv.org/pdf/2601.02587v1" target="_blank">Helicity Dependent Distribution Functions of the Proton and $Λ$ and $Σ^0$ Baryons</a></div>
+	<div class="authors">Yang Yu, Peng Cheng, Hui-Yu Xing, Daniele Binosi, Craig D. Roberts</div>
+	<div class="pubdate">Published: 2026-01-05T22:37:50+00:00</div>
+	<details>
+		<summary>Abstract</summary>
+		<div class="abstract">Using continuum Schwinger function methods, a coherent set of predictions for proton, $Λ$ and $Σ^0$ distribution functions (DFs) has been made available -- both helicity dependent and unpolarised. The results and comparisons between them reveal impacts of diquark correlations and SU$(3)$-flavour symmetry breaking, some of which are highlighted in this contribution. For instance: in-proton ratios of helicity-dependent/unpolarised valence-quark DFs are presented; it is highlighted that, were it not for the presence of axialvector diquarks in the $Σ^0$, the valence strange quark would carry none of the $Σ^0$ spin; and the sign and size of polarised gluon DFs is discussed -- at a scale typical of modern measurements, gluon partons carry roughly 40% of each octet baryon's spin.</div>
+	</details>
+	</div>
+	
+
+	<div class="paper">
+	<div class="title"><a href="https://arxiv.org/pdf/2601.01435v1" target="_blank">Simulation of the CYGNO Gaseous TPC Optical Readout</a></div>
+	<div class="authors">F. D. Amaro, R. Antonietti, E. Baracchini, L. Benussi, S. Bianco et al.</div>
+	<div class="pubdate">Published: 2026-01-04T08:42:30+00:00</div>
+	<details>
+		<summary>Abstract</summary>
+		<div class="abstract">Gaseous Time Projection Chambers with Optical Readout are sensitive detectors suitable for 3D measurement of low-energy O(1 keV) particles and are proposed for detecting rare events such as Dark Matter particle interactions. The CYGNO collaboration is developing such a detector with a high spatial and energy resolution, leveraging an innovative optical readout system. A reliable simulation of the detector response is needed to properly assess the physics reach of this technique and to better understand the performance of the detector in the development phase. Such a simulation cannot entirely rely on existing software packages; indeed, none of the available tools is capable of properly and reliably treating the different phenomena occurring in the detector, from the primary interaction in the gas volume throughout the whole detector response model, including charge transport, light production and propagation, and the response of the optical sensors. In this paper, we present a modeling of the detector response tuned on the CYGNO Optical TPC case; a description of the method is reported together with comparisons with experimental data from the LIME prototype to demonstrate the simulation performances.</div>
+	</details>
+	</div>
+	
+
+	<div class="paper">
+	<div class="title"><a href="https://arxiv.org/pdf/2601.01350v1" target="_blank">FC-CONAN: An Exhaustively Paired Dataset for Robust Evaluation of Retrieval Systems</a></div>
+	<div class="authors">Juan Junqueras, Florian Boudin, May-Myo Zin, Ha-Thanh Nguyen, Wachara Fungwacharakorn et al.</div>
+	<div class="pubdate">Published: 2026-01-04T03:38:46+00:00</div>
+	<details>
+		<summary>Abstract</summary>
+		<div class="abstract">Hate speech (HS) is a critical issue in online discourse, and one promising strategy to counter it is through the use of counter-narratives (CNs). Datasets linking HS with CNs are essential for advancing counterspeech research. However, even flagship resources like CONAN (Chung et al., 2019) annotate only a sparse subset of all possible HS-CN pairs, limiting evaluation. We introduce FC-CONAN (Fully Connected CONAN), the first dataset created by exhaustively considering all combinations of 45 English HS messages and 129 CNs. A two-stage annotation process involving nine annotators and four validators produces four partitions-Diamond, Gold, Silver, and Bronze-that balance reliability and scale. None of the labeled pairs overlap with CONAN, uncovering hundreds of previously unlabelled positives. FC-CONAN enables more faithful evaluation of counterspeech retrieval systems and facilitates detailed error analysis. The dataset is publicly available.</div>
+	</details>
+	</div>
+	
+
+	<div class="paper">
+	<div class="title"><a href="https://arxiv.org/pdf/2601.00499v1" target="_blank">Continuous monitoring of delayed outcomes in basket trials</a></div>
+	<div class="authors">Marcio A. Diniz, Hulya Kocyigit, Erin Moshier, Madhu Mazumdar, Deukwoo Kwon</div>
+	<div class="pubdate">Published: 2026-01-01T22:36:00+00:00</div>
+	<details>
+		<summary>Abstract</summary>
+		<div class="abstract">Precision medicine has led to a paradigm shift allowing the development of targeted drugs that are agnostic to the tumor location. In this context, basket trials aim to identify which tumor types - or baskets - would benefit from the targeted therapy among patients with the same molecular marker or mutation. We propose the implementation of continuous monitoring for basket trials to increase the likelihood of early identification of non-promising baskets. Although the current Bayesian trial designs available in the literature can incorporate more than one interim analysis, most of them have high computational cost, and none of them handle delayed outcomes that are expected for targeted treatments such as immunotherapies. We leverage the Bayesian empirical approach proposed by Fujiwara et al., which has low computational cost. We also extend ideas of Cai et al to address the practical challenge of performing interim analysis with delayed outcomes using multiple imputation. Operating characteristics of four different strategies to handle delayed outcomes in basket trials are compared in an extensive simulation study with the benchmark strategy where trial accrual is put on hold until complete data is observed to make a decision. The optimal handling of missing data at interim analyses is trial-dependent. With slow accrual, missingness is minimal even with continuous monitoring, favoring simpler approaches over computationally intensive methods. Although individual sample-size savings are small, multiple imputation becomes more appealing when sample size savings scale with the number of baskets and agents tested.</div>
+	</details>
+	</div>
 	
 
 	</body>
