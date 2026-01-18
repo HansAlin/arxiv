@@ -88,7 +88,10 @@ class ArxivSearch():
 		physics_keywords = (
 			'"light dark matter" OR '
 			'"dark photon" OR '
-			'"hidden sector"'
+			'"hidden sector" OR'
+			'"machine learning" OR '
+			'"dark sector" OR'
+				'"dark scalar"'
 		)
 
 		# Known experiments (soft anchors, not hard filters)
@@ -97,6 +100,7 @@ class ArxivSearch():
 			'"NA64" OR '
 			'"PADME" OR '
 			'"DarkLight" OR '
+			'"BESIII" OR '
 			'"MESA"'
 		)
 
@@ -112,8 +116,6 @@ class ArxivSearch():
 
 		# Final query
 		self.query = f"{categories} AND {keywords}"
-
-		print(self.query)
 
 		return self.query
 

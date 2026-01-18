@@ -11,3 +11,6 @@ __pycache__/
 # Ignore virtual environment
 env/
 .vscode/
+
+/states/state.json
+/states/
