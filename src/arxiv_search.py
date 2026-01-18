@@ -28,8 +28,7 @@ class ArxivSearch():
 		# Get previously results
 		try:
 			self.results = self.load_results()
-		
-		exeption:
+		except Exception:
 			self.results = None
 
 
@@ -48,7 +47,6 @@ class ArxivSearch():
 
 		# Search attributes
 		self.search_obj = None
-		self.results = None
 		self.query = None
 
 	def set_query(self) -> str:
@@ -150,14 +148,20 @@ class ArxivSearch():
 					"pdf": result.pdf_url
 				})
 		
-		self._save_results(results=filtered_results)
-		
-		self.start_date = self.end_date
-		self._save_state()
+		if filtered_results is None or len(filtered_results) == 0:
+			print("No new items found!", end=" ")
+			filtered_results = self.results
+			return filtered_results
+		else:
+			print(f"{len(filtered_results)} items found!", end=" ")
+			filtered_results = self.remove_resubmissions(results=filtered_results)
+			
+			self.start_date = self.end_date
+			self._save_state()
 
-		self.results = filtered_results
+			self.results = filtered_results
 
-		return filtered_results
+			return filtered_results
 
 	def remove_resubmissions(self, results):
 		""" Removes all the articles that is a resubmission from a previous submission
@@ -231,4 +235,4 @@ class ArxivSearch():
 if __name__ == '__main__':
 	arx = ArxivSearch()
 	results = arx.run_search()
-	filtered_results = arx.remove_resubmissions(results=results)
+	

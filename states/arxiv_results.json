@@ -1,1 +1,163 @@
-[]
+[
+  {
+    "title": "CoCoPlan: Adaptive Coordination and Communication for Multi-robot Systems in Dynamic and Unknown Environments",
+    "authors": [
+      "Xintong Zhang",
+      "Junfeng Chen",
+      "Yuxiao Zhu",
+      "Bing Luo",
+      "Meng Guo"
+    ],
+    "abstract": "Multi-robot systems can greatly enhance efficiency through coordination and collaboration, yet in practice, full-time communication is rarely available and interactions are constrained to close-range exchanges. Existing methods either maintain all-time connectivity, rely on fixed schedules, or adopt pairwise protocols, but none adapt effectively to dynamic spatio-temporal task distributions under limited communication, resulting in suboptimal coordination. To address this gap, we propose CoCoPlan, a unified framework that co-optimizes collaborative task planning and team-wise intermittent communication. Our approach integrates a branch-and-bound architecture that jointly encodes task assignments and communication events, an adaptive objective function that balances task efficiency against communication latency, and a communication event optimization module that strategically determines when, where and how the global connectivity should be re-established. Extensive experiments demonstrate that it outperforms state-of-the-art methods by achieving a 22.4% higher task completion rate, reducing communication overhead by 58.6%, and improving the scalability by supporting up to 100 robots in dynamic environments. Hardware experiments include the complex 2D office environment and large-scale 3D disaster-response scenario.",
+    "published": "2026-01-15T06:50:21+00:00",
+    "updated": "2026-01-15T06:50:21+00:00",
+    "pdf": "https://arxiv.org/pdf/2601.10116v1"
+  },
+  {
+    "title": "Strategies of cooperation and defection in five large language models",
+    "authors": [
+      "Saptarshi Pal",
+      "Abhishek Mallela",
+      "Christian Hilbe",
+      "Lenz Pracher",
+      "Chiyu Wei",
+      "Feng Fu",
+      "Santiago Schnell",
+      "Martin A Nowak"
+    ],
+    "abstract": "Large language models (LLMs) are increasingly deployed to support human decision-making. This use of LLMs has concerning implications, especially when their prescriptions affect the welfare of others. To gauge how LLMs make social decisions, we explore whether five leading models produce sensible strategies in the repeated prisoner's dilemma, which is the main metaphor of reciprocal cooperation. First, we measure the propensity of LLMs to cooperate in a neutral setting, without using language reminiscent of how this game is usually presented. We record to what extent LLMs implement Nash equilibria or other well-known strategy classes. Thereafter, we explore how LLMs adapt their strategies to changes in parameter values. We vary the game's continuation probability, the payoff values, and whether the total number of rounds is commonly known. We also study the effect of different framings. In each case, we test whether the adaptations of the LLMs are in line with basic intuition, theoretical predictions of evolutionary game theory, and experimental evidence from human participants. While all LLMs perform well in many of the tasks, none of them exhibit full consistency over all tasks. We also conduct tournaments between the inferred LLM strategies and study direct interaction between LLMs in games over ten rounds with a known or unknown last round. Our experiments shed light on how current LLMs instantiate reciprocal cooperation.",
+    "published": "2026-01-14T20:13:23+00:00",
+    "updated": "2026-01-14T20:13:23+00:00",
+    "pdf": "https://arxiv.org/pdf/2601.09849v1"
+  },
+  {
+    "title": "A Risk-Stratified Benchmark Dataset for Bad Randomness (SWC-120) Vulnerabilities in Ethereum Smart Contracts",
+    "authors": [
+      "Hadis Rezaei",
+      "Rahim Taheri",
+      "Francesco Palmieri"
+    ],
+    "abstract": "Many Ethereum smart contracts rely on block attributes such as block.timestamp or blockhash to generate random numbers for applications like lotteries and games. However, these values are predictable and miner-manipulable, creating the Bad Randomness vulnerability (SWC-120) that has led to real-world exploits. Current detection tools identify only simple patterns and fail to verify whether protective modifiers actually guard vulnerable code. A major obstacle to improving these tools is the lack of large, accurately labeled datasets. This paper presents a benchmark dataset of 1,752 Ethereum smart contracts with validated Bad Randomness vulnerabilities. We developed a five-phase methodology comprising keyword filtering, pattern matching with 58 regular expressions, risk classification, function-level validation, and context analysis. The function-level validation revealed that 49% of contracts initially classified as protected were actually exploitable because modifiers were applied to different functions than those containing vulnerabilities. We classify contracts into four risk levels based on exploitability: HIGH_RISK (no protection), MEDIUM_RISK (miner-exploitable only), LOW_RISK (owner-exploitable only), and SAFE (using Chainlink VRF or commit-reveal). Our dataset is 51 times larger than RNVulDet and the first to provide function-level validation and risk stratification. Evaluation of Slither and Mythril revealed significant detection gaps, as both tools identified none of the vulnerable contracts in our sample, indicating limitations in handling complex randomness patterns. The dataset and validation scripts are publicly available to support future research in smart contract security.",
+    "published": "2026-01-14T19:49:56+00:00",
+    "updated": "2026-01-14T19:49:56+00:00",
+    "pdf": "https://arxiv.org/pdf/2601.09836v1"
+  },
+  {
+    "title": "Full Disclosure, Less Trust? How the Level of Detail about AI Use in News Writing Affects Readers' Trust",
+    "authors": [
+      "Pooja Prajod",
+      "Hannes Cools",
+      "Thomas Röggla",
+      "Karthikeya Puttur Venkatraj",
+      "Amber Kusters",
+      "Alia ElKattan",
+      "Pablo Cesar",
+      "Abdallah El Ali"
+    ],
+    "abstract": "As artificial intelligence (AI) is increasingly integrated into news production, calls for transparency about the use of AI have gained considerable traction. Recent studies suggest that AI disclosures can lead to a ``transparency dilemma'', where disclosure reduces readers' trust. However, little is known about how the \\textit{level of detail} in AI disclosures influences trust and contributes to this dilemma within the news context. In this 3$\\times$2$\\times$2 mixed factorial study with 40 participants, we investigate how three levels of AI disclosures (none, one-line, detailed) across two types of news (politics and lifestyle) and two levels of AI involvement (low and high) affect news readers' trust. We measured trust using the News Media Trust questionnaire, along with two decision behaviors: source-checking and subscription decisions. Questionnaire responses and subscription rates showed a decline in trust only for detailed AI disclosures, whereas source-checking behavior increased for both one-line and detailed disclosures, with the effect being more pronounced for detailed disclosures. Insights from semi-structured interviews suggest that source-checking behavior was primarily driven by interest in the topic, followed by trust, whereas trust was the main factor influencing subscription decisions. Around two-thirds of participants expressed a preference for detailed disclosures, while most participants who preferred one-line indicated a need for detail-on-demand disclosure formats. Our findings show that not all AI disclosures lead to a transparency dilemma, but instead reflect a trade-off between readers' desire for more transparency and their trust in AI-assisted news content.",
+    "published": "2026-01-14T16:45:45+00:00",
+    "updated": "2026-01-14T16:45:45+00:00",
+    "pdf": "https://arxiv.org/pdf/2601.09620v1"
+  },
+  {
+    "title": "Quiet Sun impulsive events observed with NuSTAR during solar minimum",
+    "authors": [
+      "Sarah Paterson",
+      "Iain G. Hannah",
+      "Brian W. Grefenstette",
+      "Säm Krucker",
+      "Erica Lastufka",
+      "Hugh S. Hudson",
+      "Lindsay Glesener",
+      "Stephen M. White",
+      "David M. Smith"
+    ],
+    "abstract": "The investigation of small-scale energy release in the Sun's atmosphere is important in understanding how the corona is heated. Previous work has been able to study small EUV and SXR brightenings outside of active regions (i.e. the quiet Sun), but with HXRs this has mostly focused on active region transients/microflares due to the sensitivity of available telescopes. In this paper we present observations of the quiet Sun with the Nuclear Spectroscopic Telescope Array (NuSTAR), an X-ray imaging spectrometer with much greater sensitivity than previous instruments, allowing the observation of faint events. During the recent solar minimum, NuSTAR captured seven quiet Sun flares/impulsive brightenings, three on 21 February 2020, and four on 12-13 September 2020. From fitting their NuSTAR HXR spectra we find temperatures of 3.1-4.0 MK and emission measures between (0.75-17.0) $\\times 10^{43}$ cm$^{-3}$, which gives thermal energies between (2.5-8.9) $\\times 10^{26}$ erg. Only one event, a mini-filament eruption, showed evidence of slightly higher temperatures emission, confirmed through Differential Emission Measure analysis. None of the events showed evidence of non-thermal emission in their NuSTAR spectra, and we placed upper limits to the accelerated electron population. The thermal parameters for these quiet Sun events seem to scale differently to previously studied active region flares, suggesting a different energy release process might be dominating. However, this conclusion is affected by the different sensitivity and biases introduced by the various instruments and analysis approaches used.",
+    "published": "2026-01-14T14:59:34+00:00",
+    "updated": "2026-01-14T14:59:34+00:00",
+    "pdf": "https://arxiv.org/pdf/2601.09538v1"
+  },
+  {
+    "title": "Investigating Tool-Memory Conflicts in Tool-Augmented LLMs",
+    "authors": [
+      "Jiali Cheng",
+      "Rui Pan",
+      "Hadi Amiri"
+    ],
+    "abstract": "Tool-augmented large language models (LLMs) have powered many applications. However, they are likely to suffer from knowledge conflict. In this paper, we propose a new type of knowledge conflict -- Tool-Memory Conflict (TMC), where the internal parametric knowledge contradicts with the external tool knowledge for tool-augmented LLMs. We find that existing LLMs, though powerful, suffer from TMC, especially on STEM-related tasks. We also uncover that under different conditions, tool knowledge and parametric knowledge may be prioritized differently. We then evaluate existing conflict resolving techniques, including prompting-based and RAG-based methods. Results show that none of these approaches can effectively resolve tool-memory conflicts.",
+    "published": "2026-01-14T03:44:36+00:00",
+    "updated": "2026-01-14T03:44:36+00:00",
+    "pdf": "https://arxiv.org/pdf/2601.09760v1"
+  },
+  {
+    "title": "Resolving Predictive Multiplicity for the Rashomon Set",
+    "authors": [
+      "Parian Haghighat",
+      "Hadis Anahideh",
+      "Cynthia Rudin"
+    ],
+    "abstract": "The existence of multiple, equally accurate models for a given predictive task leads to predictive multiplicity, where a ``Rashomon set'' of models achieve similar accuracy but diverges in their individual predictions. This inconsistency undermines trust in high-stakes applications where we want consistent predictions. We propose three approaches to reduce inconsistency among predictions for the members of the Rashomon set. The first approach is \\textbf{outlier correction}. An outlier has a label that none of the good models are capable of predicting correctly. Outliers can cause the Rashomon set to have high variance predictions in a local area, so fixing them can lower variance. Our second approach is local patching. In a local region around a test point, models may disagree with each other because some of them are biased. We can detect and fix such biases using a validation set, which also reduces multiplicity. Our third approach is pairwise reconciliation, where we find pairs of models that disagree on a region around the test point. We modify predictions that disagree, making them less biased. These three approaches can be used together or separately, and they each have distinct advantages. The reconciled predictions can then be distilled into a single interpretable model for real-world deployment. In experiments across multiple datasets, our methods reduce disagreement metrics while maintaining competitive accuracy.",
+    "published": "2026-01-14T02:02:54+00:00",
+    "updated": "2026-01-14T02:02:54+00:00",
+    "pdf": "https://arxiv.org/pdf/2601.09071v1"
+  },
+  {
+    "title": "Multi parameter discrimination using multiple spectral troughs in a cascaded fiber sensor",
+    "authors": [
+      "Riming Xu",
+      "Yanbo Li",
+      "Xingnan Chen",
+      "Jin Wang"
+    ],
+    "abstract": "Accurate monitoring of temperature, axial strain, and refractive index is critical for structural health monitoring, industrial process control, and environmental sensing. However, conventional optical fiber sensors are often limited by strong parameter cross sensitivity, poor discrimination capability, and increased system complexity when multiple sensing units are required. In this work, a compact multi-parameter optical fiber sensing platform is proposed based on a cascaded single-mode fiber, multimode fiber, and long-period fiber grating structure, combined with a wavelength-based spectral demodulation strategy. Within the cascaded configuration, multiple characteristic spectral troughs arising from distinct physical mechanisms coexist in a single transmission spectrum. Interference-induced troughs are generated by the multimode fiber section, while a resonance-induced trough is introduced by the long-period fiber grating. Although none of these troughs responds exclusively to a single parameter, each exhibits simultaneous and linearly independent responses to temperature, axial strain, and refractive index with distinct sensitivity magnitudes and trends. Consequently, each trough can be described by a unique sensitivity vector, enabling robust multi-parameter discrimination through multi-wavelength spectral demodulation.",
+    "published": "2026-01-14T00:49:19+00:00",
+    "updated": "2026-01-14T00:49:19+00:00",
+    "pdf": "https://arxiv.org/pdf/2601.09055v1"
+  },
+  {
+    "title": "Agent Contracts: A Formal Framework for Resource-Bounded Autonomous AI Systems",
+    "authors": [
+      "Qing Ye",
+      "Jing Tan"
+    ],
+    "abstract": "The Contract Net Protocol (1980) introduced coordination through contracts in multi-agent systems. Modern agent protocols standardize connectivity and interoperability; yet, none provide formal, resource governance-normative mechanisms to bound how much agents may consume or how long they may operate. We introduce Agent Contracts, a formal framework that extends the contract metaphor from task allocation to resource-bounded execution. An Agent Contract unifies input/output specifications, multi-dimensional resource constraints, temporal boundaries, and success criteria into a coherent governance mechanism with explicit lifecycle semantics. For multi-agent coordination, we establish conservation laws ensuring delegated budgets respect parent constraints, enabling hierarchical coordination through contract delegation. Empirical validation across four experiments demonstrates 90% token reduction with 525x lower variance in iterative workflows, zero conservation violations in multi-agent delegation, and measurable quality-resource tradeoffs through contract modes. Agent Contracts provide formal foundations for predictable, auditable, and resource-bounded autonomous AI deployment.",
+    "published": "2026-01-13T18:51:07+00:00",
+    "updated": "2026-01-13T18:51:07+00:00",
+    "pdf": "https://arxiv.org/pdf/2601.08815v1"
+  },
+  {
+    "title": "Fake Date Tests: Can We Trust In-sample Accuracy of LLMs in Macroeconomic Forecasting?",
+    "authors": [
+      "Alexander Eliseev",
+      "Sergei Seleznev"
+    ],
+    "abstract": "Large language models (LLMs) are a type of machine learning tool that economists have started to apply in their empirical research. One such application is macroeconomic forecasting with backtesting of LLMs, even though they are trained on the same data that is used to estimate their forecasting performance. Can these in-sample accuracy results be extrapolated to the model's out-of-sample performance? To answer this question, we developed a family of prompt sensitivity tests and two members of this family, which we call the fake date tests. These tests aim to detect two types of biases in LLMs' in-sample forecasts: lookahead bias and context bias. According to the empirical results, none of the modern LLMs tested in this study passed our first test, signaling the presence of lookahead bias in their in-sample forecasts.",
+    "published": "2026-01-12T20:44:34+00:00",
+    "updated": "2026-01-12T20:44:34+00:00",
+    "pdf": "https://arxiv.org/pdf/2601.07992v1"
+  },
+  {
+    "title": "From perovskite to infinite-layer nickelates: hole concentration from x-ray absorption",
+    "authors": [
+      "R. Pons",
+      "M. Flavenot",
+      "K. Fürsich",
+      "E. Schierle",
+      "E. Weschke",
+      "M. R. Cantarino",
+      "E. Goering",
+      "P. Nagel",
+      "S. Schuppler",
+      "G. Kim",
+      "G. Logvenov",
+      "B. Keimer",
+      "R. J. Green",
+      "D. Preziosi",
+      "E. Benckiser"
+    ],
+    "abstract": "The difficulty of determining cation concentrations and oxygen stoichiometry in infinite-layer nickelate thin films has so far prevented clear experimental identification of the nickel electron configuration in the superconducting phase. We used soft x-ray absorption spectroscopy to study the successive changes in PrNiO$_x$ thin films at various intermediate stages of topotactic reduction with $x=2-3$. By comparing the Ni-$L$ edge spectra to single and double cluster ligand-field calculations, we find that none of our samples exhibit a pure $d^9$ configuration. Our quantitative analysis using the charge sum rule shows that even when films are maximally reduced, the averaged number of nickel $3d$ holes is 1.35. Superconducting samples have even higher values, calling into question the previously assumed limit of hole doping. Concomitant changes in the oxygen $K$-edge absorption spectra upon reduction indicate the presence of oxygen $2p$ holes, even in the most reduced films. Overall, our results suggest a complex interplay of hole doping mechanisms resulting from self-doping effects and oxygen non-stoichiometry.",
+    "published": "2026-01-12T16:43:43+00:00",
+    "updated": "2026-01-12T16:43:43+00:00",
+    "pdf": "https://arxiv.org/pdf/2601.07710v1"
+  }
+]
