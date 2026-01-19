@@ -145,7 +145,8 @@ class ArxivSearch():
 		Returns:
 			json: The results from arxive
 		"""
-
+		print(f"Start search date {self.start_date}", end=" ,")
+		print(f"End search date: {self.end_date}", end=" ")
 		if query is None:
 			query = self.query
 
