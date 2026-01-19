@@ -87,6 +87,7 @@ class ArxivSearch():
 
 		# Light dark matter and related searches (soft signal)
 		physics_keywords = (
+
 		'"light dark matter" OR '
 		'"dark matter" OR '
 		'"dark bremsstrahlung" OR '
