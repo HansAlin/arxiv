@@ -61,6 +61,7 @@ class ArxivSearch():
 		# Categories: experimental and high-energy relevant
 		categories = (
 			"(cat:hep-ex OR "
+			"cat:hep-ph OR "
 			"cat:astro-ph.HE OR "
 			"cat:nucl-ex)"
 		)
@@ -78,29 +79,41 @@ class ArxivSearch():
 
 		# Fixed-target / missing-momentum keywords
 		experiment_keywords = (
-			'"fixed target" OR '
-			'"missing momentum" OR '
-			'"missing energy" OR '
-			'"beam dump"'
+		'"fixed target" OR '
+		'"missing momentum" OR '
+		'"missing energy" OR '
+		'"beam dump"'
 		)
 
 		# Light dark matter and related searches (soft signal)
 		physics_keywords = (
-			'"light dark matter" OR '
-			'"dark photon" OR '
-			'"hidden sector" OR'
-			'"machine learning" OR '
-			'"dark sector" OR'
-				'"dark scalar"'
+		'"light dark matter" OR '
+		'"dark matter" OR '
+		'"dark bremsstrahlung" OR '
+		'"dark photon" OR '
+		'"hidden sector" OR'
+		'"sub-GeV" OR '
+		'"sub GeV" OR '
+		'"electron beam" OR '
+		'"electron fixed target" OR '
+		'"machine learning" OR '
+		'"deep neural network" OR '
+		'"deep-learning" OR '
+		'"deep learning" OR '
+		'"dark sector" OR'
+			'"dark scalar"'
 		)
 
 		# Known experiments (soft anchors, not hard filters)
 		experiment_names = (
-			'"LDMX" OR '
-			'"NA64" OR '
+			'"LDMX" OR '   # SENSEI, LBECA, CDEX‑10, XENON  direct detection
+			'"NA64" OR '   # LDMX, HPS, ILC‑BDX, MiniBooNE/T2K fixed target
 			'"PADME" OR '
 			'"DarkLight" OR '
 			'"BESIII" OR '
+			'"NA62" OR '
+			'"Belle II" OR '
+			'"XENON" OR '
 			'"MESA"'
 		)
 
