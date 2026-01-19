@@ -87,7 +87,6 @@ class ArxivSearch():
 
 		# Light dark matter and related searches (soft signal)
 		physics_keywords = (
-<<<<<<< HEAD
 		'"light dark matter" OR '
 		'"dark matter" OR '
 		'"dark bremsstrahlung" OR '
@@ -103,12 +102,6 @@ class ArxivSearch():
 		'"deep learning" OR '
 		'"dark sector" OR'
 			'"dark scalar"'
-=======
-			'"light dark matter" OR '
-			'"dark photon" OR '
-			'"hidden sector" OR'
-				'"dark scalar"'
->>>>>>> 4f47b3a (Changed search words)
 		)
 
 		# Known experiments (soft anchors, not hard filters)
@@ -118,12 +111,9 @@ class ArxivSearch():
 			'"PADME" OR '
 			'"DarkLight" OR '
 			'"BESIII" OR '
-<<<<<<< HEAD
 			'"NA62" OR '
 			'"Belle II" OR '
 			'"XENON" OR '
-=======
->>>>>>> 4f47b3a (Changed search words)
 			'"MESA"'
 		)
 
