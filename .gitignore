@@ -13,4 +13,5 @@ env/
 .vscode/
 
 /states/state.json
-/states/
+states/
+html/

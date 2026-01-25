@@ -101,6 +101,7 @@ class ArxivSearch():
 		'"deep-learning" OR '
 		'"deep learning" OR '
 		'"dark sector" OR'
+		'"ALP" OR'
 			'"dark scalar"'
 		)
 
