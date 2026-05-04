@@ -1,3 +1,4 @@
+#!/home/pi/Projects/arxiv/env/bin/python
 import arxiv
 from datetime import datetime, timedelta, timezone
 import json
@@ -50,23 +51,13 @@ class ArxivSearch():
 		self.query = self.set_query()
 
 	def set_query(self) -> str:
-		"""
-		Construct a broad, inclusive arXiv query suitable for:
-		- LDMX and similar fixed-target experiments
-		- Detector and calorimeter studies
-		- Cosmic-ray / cosmic-muon calibration
-		- Light dark matter searches (but not exclusively)
-		"""
 
-		# Categories: experimental and high-energy relevant
 		categories = (
 			"(cat:hep-ex OR "
 			"cat:hep-ph OR "
-			"cat:astro-ph.HE OR "
 			"cat:nucl-ex)"
 		)
 
-		# Experimental / detector keywords
 		detector_keywords = (
 			'"calorimeter" OR '
 			'"hadronic calorimeter" OR '
@@ -77,63 +68,73 @@ class ArxivSearch():
 			'"cosmic muon"'
 		)
 
-		# Fixed-target / missing-momentum keywords
+		pileup_keywords = (
+			'"pileup" OR '
+			'"pile-up" OR '
+			'"HL-LHC" OR '
+			'"high luminosity LHC" OR '
+			'"event reconstruction" OR '
+			'"jet reconstruction" OR '
+			'"particle flow" OR '
+			'"underlying event"'
+		)
+
 		experiment_keywords = (
-		'"fixed target" OR '
-		'"missing momentum" OR '
-		'"missing energy" OR '
-		'"beam dump"'
+			'"fixed target" OR '
+			'"missing momentum" OR '
+			'"missing energy" OR '
+			'"beam dump"'
 		)
 
-		# Light dark matter and related searches (soft signal)
 		physics_keywords = (
-
-		'"light dark matter" OR '
-		'"dark matter" OR '
-		'"dark bremsstrahlung" OR '
-		'"dark photon" OR '
-		'"hidden sector" OR'
-		'"sub-GeV" OR '
-		'"sub GeV" OR '
-		'"electron beam" OR '
-		'"electron fixed target" OR '
-		'"machine learning" OR '
-		'"deep neural network" OR '
-		'"deep-learning" OR '
-		'"deep learning" OR '
-		'"dark sector" OR'
-		'"ALP" OR'
-			'"dark scalar"'
+			'"light dark matter" OR '
+			'"dark photon" OR '
+			'"hidden sector" OR '
+			'"dark bremsstrahlung" OR '
+			'"sub-GeV" OR '
+			'"electron beam" OR '
+			'"machine learning" OR '
+			'"deep learning"'
 		)
 
-		# Known experiments (soft anchors, not hard filters)
 		experiment_names = (
-			'"LDMX" OR '   # SENSEI, LBECA, CDEX‑10, XENON  direct detection
-			'"NA64" OR '   # LDMX, HPS, ILC‑BDX, MiniBooNE/T2K fixed target
+			'"LDMX" OR '
+			'"NA64" OR '
 			'"PADME" OR '
 			'"DarkLight" OR '
-			'"BESIII" OR '
 			'"NA62" OR '
 			'"Belle II" OR '
-			'"XENON" OR '
-			'"MESA"'
+			'"ATLAS" OR '
+			'"CMS"'
 		)
 
-		# Combine all keyword groups
-		keywords = (
+		exclude_cosmo = (
+			'NOT ("cosmology" OR '
+			'"CMB" OR '
+			'"large scale structure" OR '
+			'"relic density" OR '
+			'"galaxy formation")'
+		)
+
+		# Key change: require detector/pileup/experiment context
+		core = (
 			"("
 			f"{detector_keywords} OR "
+			f"{pileup_keywords} OR "
 			f"{experiment_keywords} OR "
-			f"{physics_keywords} OR "
 			f"{experiment_names}"
 			")"
 		)
 
-		# Final query
-		self.query = f"{categories} AND {keywords}"
+		optional = (
+			"("
+			f"{physics_keywords}"
+			")"
+		)
+
+		self.query = f"{categories} AND {core} AND {optional} {exclude_cosmo}"
 
 		return self.query
-
 
 
 
@@ -259,4 +260,5 @@ class ArxivSearch():
 if __name__ == '__main__':
 	arx = ArxivSearch()
 	results = arx.run_search()
+	
 	
